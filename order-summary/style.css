@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+    /*Primario*/
+    --Blue100: hsl(225, 100%, 94%);
+    --Blue700: hsl(245, 75%, 52%);
+
+    /*Neutro*/
+    --Blue50: hsl(225, 100%, 98%);
+    --Gray600: hsl(224, 23%, 55%);
+    --Blue950: hsl(223, 47%, 23%);  
+
+    /*Imagens de fundo*/
+    --desktop: url('images/pattern-background-desktop.svg')
+}
+
+html {
+    margin: auto;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background-image: var(--desktop);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--Blue100);
+}
+
+body p, h1, a {
+    color: var(--Blue950);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 400px;
+    max-height: 900px;
+    margin: auto;
+    background-color: var(--Blue50);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.048);
+    text-align: center;   
+}
+
+.card p, h1, a, #plano {
+    margin:  auto 25px;
+}
+
+.card h1 {
+    margin: 30px auto;
+    font-size:x-large;
+    font-weight: 800;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.plano {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 255);
+    border-radius: 15px;
+    margin: 10px;
+    white-space: nowrap;
+    border: 20px solid rgb(238, 238, 255);
+}
+
+
+
+.esquerda #annual {
+    font-weight: 900;
+    color: var(--Blue950);
+}
+
+.botao-pagamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+    padding: 10px;
+    background-color: var(--Blue700);
+    color: var(--Blue100);
+    border-radius: 15px;
+}
+
+.botao-cancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+    padding: 20px;
+    background-color: var(--Blue700);
+    color: var(--Blue100);
+    border-radius: 15px;
+}
