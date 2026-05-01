@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /*Primary*/
+
+    --Red400: hsl(0, 100%, 74%);
+    --Green400: hsl(154, 59%, 51%);
+
+    /*Accent*/
+
+    --Purple700: hsl(248, 32%, 49%);
+
+    /*Neutral*/
+
+    --Gray900: hsl(249, 10%, 26%) ;
+    --Purple350: hsl(246, 25%, 77%);
+}
+
+a, h1, p, input{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.form {
+    
+}
+
+.form #submit{
+    background-color: var(--Purple700);
+    color: white;
+}
