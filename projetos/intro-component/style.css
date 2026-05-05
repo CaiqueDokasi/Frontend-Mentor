@@ -14,18 +14,129 @@
 
     --Gray900: hsl(249, 10%, 26%) ;
     --Purple350: hsl(246, 25%, 77%);
+    --desktop: url(images/bg-intro-desktop.png)
 }
 
 a, h1, p, input{
     font-family: "Poppins", sans-serif;
 }
 
-
-.form {
-    
+a {
+    color: var(--Red400);
 }
 
-.form #submit{
-    background-color: var(--Purple700);
+html {
+    margin:auto;
+
+}
+
+body {
+    background-image: var(--desktop);
+    background-color: var(--Red400);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.hero {
+    max-width: 440px;
+    padding: 40px;
+    grid-column: 1;
+    grid-row: 2/3;
+}
+
+.hero h1, p{
     color: white;
+}
+
+
+
+.try {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    padding: 25px 40px;
+    background-color: var(--Purple700);
+    border-radius: 7px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.543);
+    box-sizing: border-box;
+    grid-column: 2;
+    grid-row: 1/2;
+}
+
+.try p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+.form {
+    max-height: 400px;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.422);
+    grid-column: 2;
+    grid-row: 2/3;
+    
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form p{
+    margin: 10px 0px;
+}
+
+.form input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid var(--Purple350);
+    border-radius: 7px;
+}
+.form #submit{
+    background-color: var(--Green400);
+    color: white;
+}
+
+#terms{
+    font-size:10px;
+    text-align: center;
+    color: var(--Purple350);
+}
+
+@media (max-width: 768px) {
+    .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 0px;
+    }
+
 }
