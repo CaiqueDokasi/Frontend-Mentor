@@ -3,7 +3,7 @@
 :root {
     /*Primary*/
 
-    --Red400: hsl(0, 100%, 74%);
+    --Red400: #ff7a7a;
     --Green400: hsl(154, 59%, 51%);
 
     /*Accent*/
@@ -81,11 +81,16 @@ body {
     margin: 0;
 }
 
-
+.span {
+    color: #ff7a7a;
+    display: none;
+    text-align: right;
+    font-size: 12px;
+}
 
 
 .form {
-    max-height: 400px;
+    max-height: 450px;
     max-width: 400px;
     padding: 40px;
     background-color: white;
@@ -105,6 +110,8 @@ form p{
     margin: 10px 0px;
 }
 
+
+
 .form input{
     width: 100%;
     padding: 14px;
@@ -113,6 +120,12 @@ form p{
     border: 1px solid var(--Purple350);
     border-radius: 7px;
 }
+
+input:focus{
+    border: 2px solid var(--Purple700);
+    outline: none;
+}
+
 .form #submit{
     background-color: var(--Green400);
     color: white;
